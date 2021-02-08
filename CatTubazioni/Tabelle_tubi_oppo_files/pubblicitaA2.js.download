@@ -1,0 +1,20 @@
+
+<!--
+function banner() {
+	
+	var img = new Array();
+	img[0] = "../js/img/imgA1.png";
+	img[1] = "../js/img/imgA2.png";
+    
+	var url = new Array();
+    url[0] = "../impianti/a_impianti.htm#elift";
+    url[1] = "https://www.fontaneoppo.it/"; 
+
+	var banners = Math.floor(Math.random()*img.length);
+	document.write("<a href=" + url[banners] + "><img src=" + img[banners] + " width='184' height='44' border='0' /></a>");
+}
+
+banner();
+//-->
+
+/* <script src="../js/pubblicitaA2.js" language="javascript" type="text/javascript"></script> */

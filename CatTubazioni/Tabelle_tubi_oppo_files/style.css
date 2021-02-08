@@ -1,0 +1,466 @@
+@charset "utf-8";
+
+html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,input,abbr,article,aside,command,details,figcaption,figure,footer,header,hgroup,mark,meter,nav,output,progress,section,summary,time { margin: 0; padding: 0; }
+h1,h2,h3,h4,h5,h6,pre,code,address,caption,cite,code,em,strong,th,figcaption { font-size: 1em; font-weight: normal; font-style: normal; }
+fieldset,iframe { border: none; }
+article,aside,footer,header,hgroup,nav,section,figure,figcaption { display: block; }
+
+html {
+	width: 100%;
+	height: 100%;
+	background: #ffffff;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+body {
+	position: relative; /* Necessario esclusivamente per l'utilizzo di PIE.htc */
+	width: 1000px;
+	min-height: 101%;
+	margin: 0 auto;
+	padding: 0 0 15px;
+	background: #ffffff;
+	font: 14px/20px Helvetica, Arial, Verdana, sans-serif;
+	color:#000;
+	border: none;
+	-khtml-box-shadow: none;
+	-ms-box-shadow: none;
+	-o-box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+@media screen and (min-width: 1121px) {
+	html { background: #f0f0f0; }
+	
+	body {
+     	min-height: 100%;
+	    padding: 0 50px 15px;
+	    border-right: 1px solid #d9d9d9;
+	    border-left: 1px solid #d9d9d9;
+     -khtml-box-shadow: 0 2px 4px #999;
+ 	    -ms-box-shadow: 0 2px 4px #999;
+ 	     -o-box-shadow: 0 2px 4px #999;
+	   -moz-box-shadow: 0 2px 4px #999;
+    -webkit-box-shadow: 0 2px 4px #999;
+	        box-shadow: 0 2px 4px #999;
+		behavior: url(https://www.oppo.it/PIE.htc); /* This lets IE know to call the script on all elements which get the 'box' class */
+	}
+}
+
+#container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#nav {
+	position: relative; /* Necessario esclusivamente per l'utilizzo di PIE.htc */
+	background: url(../img/shadow.jpg) no-repeat;
+	background-size: 960px 80px;
+	background-position: bottom;
+	width: 960px;
+	height: 104px;
+	overflow: hidden;
+}
+
+#topbar {
+	position: relative; /* Necessario esclusivamente per l'utilizzo di PIE.htc */
+	background: url(../img/tb-bg.jpg) repeat-x;
+	background-size: 2px 34px;
+	background-color: #1d6fd2;
+	width: 960px;
+	height: 34px;
+	margin-top: 15px;
+	overflow: hidden;
+    -khtml-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    -moz-border-radius: 6px; /* firefox */
+    -webkit-border-radius: 6px; /* safari, chrome */
+    border-radius: 6px;
+     -khtml-box-shadow: 0 2px 1px #c9c9c9;
+	    -ms-box-shadow: 0 2px 1px #c9c9c9;
+	     -o-box-shadow: 0 2px 1px #c9c9c9;
+	   -moz-box-shadow: 0 2px 1px #c9c9c9;
+	-webkit-box-shadow: 0 2px 1px #c9c9c9;
+	        box-shadow: 0 2px 1px #c9c9c9;
+    behavior: url(https://www.oppo.it/PIE.htc); /* This lets IE know to call the script on all elements which get the 'box' class */
+}
+
+.tb-box {
+	position: relative; /* Necessario esclusivamente per l'utilizzo di PIE.htc */
+	height: 34px;
+	font: 13px/34px "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
+	text-align: center;
+	overflow: hidden;
+	float: left; 
+	filter: Shadow(Color='#00196c', Direction=180, Strength=1);  /* Per Internet Explorer */
+	text-shadow: 0 1px 1px #00196c;
+    behavior: url(https://www.oppo.it/PIE.htc); /* This lets IE know to call the script on all elements which get the 'box' class */
+}
+
+.tb-box1 { width: 70px; color: #fff; }
+a .tb-box1:hover { color: #ff0; }
+
+.tb-box2 { width: 90px; color: #fff; }
+a .tb-box2:hover { color: #ff0; }
+
+.tb-box3 { width: 90px; color: #ff0; font-weight: bold; }
+a .tb-box3:hover { color: #0ef; }
+
+.tb-space {
+	background: url(../img/tb-space.jpg) no-repeat;
+	background-size: 1px 34px; 
+	width: 1px;
+	height: 34px;
+	float: left;
+}
+
+#bottombar {
+	width: 642px;
+	margin: 18px auto 0;
+	text-align: center;
+	overflow: hidden;
+}
+
+.bb-box {
+	position: relative; /* Necessario esclusivamente per l'utilizzo di PIE.htc */
+	height: 22px;
+	font: 11px/22px "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
+	color: #000;
+	text-align: center;
+	overflow: hidden;
+	float: left;
+    border: 1px solid #d6d6d9;
+    -khtml-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    -moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+    behavior: url(https://www.oppo.it/PIE.htc); /* This lets IE know to call the script on all elements which get the 'box' class */
+}
+a .bb-box:hover { color: #fd620b; }
+
+.bb-box1 { background: url(../img/line-white.jpg) repeat-x; background-size: 2px 22px; width: 82px; }
+.bb-box2 { background: url(../img/line-green.jpg) repeat-x; background-size: 2px 22px; width: 82px; }
+.bb-box3 { background: url(../img/line-white.jpg) repeat-x; background-size: 2px 22px; width: 94px; }
+.bb-space { width: 7px; height: 22px; float: left; }
+
+#main {
+	width: 100%;
+	margin-top: 25px;
+	overflow: hidden;
+}
+
+#header {
+	width: 100%;
+	overflow: hidden;
+}
+#hd-box1 { width: 184px; float: left; }
+#hd-box2 { width: 592px; float: left; }
+#hd-box3 { width: 184px; float: left; text-align: right; }
+
+#content {
+	width: 100%;
+	max-height: 5000em; /* necessario per smartphone */
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+#links {
+	margin-top: 20px;
+	padding: 15px 25px;
+	border-top: 1px solid #d8d8db;
+    border-left: 1px solid #c2c2c5;
+    border-bottom: 1px solid #b4b4b7;
+    border-right: 1px solid #c2c2c5;
+    -khtml-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+/*
+<div id="links"><p><b>Argomenti correlati</b></p><ul>
+<li><a href=""></a></li>
+</ul></div>
+*/
+
+#footer {
+	position: relative; /* Necessario esclusivamente per l'utilizzo di PIE.htc */
+	background: url(../img/shadow_flipped.jpg) no-repeat;
+	background-size: 960px 80px;
+	background-position: top;
+	width: 960px;
+	height: 65px;
+	overflow: hidden;
+	margin: 25px auto 0;
+	padding: 17px 0 0;
+}
+.ft-text { color: #5f5f5f; }
+
+h1,h2,h3,h4,h5,h6 { color: #000; }
+h3,h4,h5,h6 { margin: 10px 0; }
+h1 { font-size: 24px; line-height: 30px; text-align: center; margin: 8px 25px 0; }
+h2 { font-size: 16px; line-height: 22px; text-align: center; margin: 15px 0; }
+h3 { font-size: 16px; line-height: 22px; text-align: left; }
+h4 { font-size: 14px; line-height: 20px; text-align: center; }
+h5 { font: 14px/20px "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif; text-align: left; font-weight: bold; }
+h6 { font: 13px/20px "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif; text-align: left; }
+.h2 { font-size: 18px; line-height: 24px; }
+.h6 { font: 13px/20px "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif; }
+.h7 { font: 12px/20px "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif; }
+.h8 { font-size: 11px; line-height: 18px; }
+
+.bold { font-weight: bold; }
+.minidescr  { font: 11px/16px "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif; color: #8f8f8f; }
+.minidescr-red  { font: 11px/16px "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif; color: #f00; }
+.mini { font: 11px/16px Helvetica, Arial, Verdana, sans-serif; } /* Per pagina Tabella caratteri UNICODE */
+
+a { color: #054bb2; }
+a:link, a:visited, a:active { text-decoration: none; }
+a:hover { text-decoration: none; color: #fd620b; }
+
+p { margin: 10px 0; }
+hr { width: 100%; height: 1px; border: 0; color: #cacacd; background-color: #cacacd; }
+
+strong, b { font-weight: bold; }
+em, i, cite { font-style: italic; }
+
+tt {
+	font: 14px/20px Helvetica, Arial, Verdana, sans-serif;
+	font-style: italic;
+	font-weight: normal;
+}
+
+sup { font: 10px/12px Helvetica, Arial, Verdana, sans-serif; }
+sub { font: 10px/12px Helvetica, Arial, Verdana, sans-serif; }
+
+ul { margin: 10px 0; padding-left: 25px; list-style: disc outside; }
+ol { margin: 10px 0; padding-left: 25px; list-style: decimal; }
+
+img { border: 0; padding: 0;}
+
+.border {
+	border-top: 1px solid #d8d8db;
+    border-left: 1px solid #c2c2c5;
+    border-bottom: 1px solid #b4b4b7;
+    border-right: 1px solid #c2c2c5;
+}
+a .border:hover { border-color: #fd620b; }
+
+.rounded {
+    -khtml-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    -moz-border-radius: 6px; /* firefox */
+    -webkit-border-radius: 6px; /* safari, chrome */
+    border-radius: 6px;
+}
+
+.box-shadow {
+     -khtml-box-shadow: 0 2px 1px #c9c9c9;
+ 	    -ms-box-shadow: 0 2px 1px #c9c9c9;
+ 	     -o-box-shadow: 0 2px 1px #c9c9c9;
+	   -moz-box-shadow: 0 2px 1px #c9c9c9;
+    -webkit-box-shadow: 0 2px 1px #c9c9c9;
+	        box-shadow: 0 2px 1px #c9c9c9;
+}
+
+.text-shadow {
+	filter: Shadow(Color='#00196c', Direction=180, Strength=1);  /* Per Internet Explorer */
+	text-shadow: 0 1px 1px #00196c;
+}
+
+.right { float: right; }
+.left { float: left; }
+.clear { clear: both; }
+
+.displaynone { display: none; }
+
+.margin0 { margin: 0; }
+.margin0auto { margin: 0 auto; }
+.marginT0 { margin-top: 0; }
+.marginT5 { margin-top: 5px; }
+.marginT10 { margin-top: 10px; }
+.marginT15 { margin-top: 15px; }
+.marginT20 { margin-top: 20px; }
+.marginT25 { margin-top: 25px; }
+.marginT30 { margin-top: 30px; }
+.marginT40 { margin-top: 40px; }
+.marginT45 { margin-top: 45px; }
+.marginT50 { margin-top: 50px; }
+.marginTB5 { margin: 5px 0; }
+.marginTB10 { margin: 10px 0; }
+.marginTB15 { margin: 15px 0; }
+.marginTB20 { margin: 20px 0; }
+.marginTB25 { margin: 25px 0; }
+.marginT10BL40 { margin: 10px 0 40px 40px; }
+.marginT20BL40 { margin: 20px 0 40px 40px; }
+.marginRB30 { margin: 0 30px 30px 0; }
+.marginL15 { margin-left: 15px; }
+.marginL17 { margin-left: 17px; }
+.marginL20 { margin-left: 20px; }
+.marginL30 { margin-left: 30px; }
+.marginL35 { margin-left: 35px; }
+.marginL40 { margin-left: 40px; }
+.marginB0 { margin-bottom: 0; }
+.marginBL20 { margin: 0 0 20px 20px; }
+.marginBL30 { margin: 0 0 30px 30px; }
+.marginBL40 { margin: 0 0 40px 40px; }
+
+.padding0 { padding: 0; }
+.padding2 { padding: 2px; }
+.padding3 { padding: 3px; }
+.padding5 { padding: 5px; }
+.padding8 { padding: 8px; }
+.padding10 { padding: 10px; }
+.padding30 { padding: 30px; }
+.paddingT40 { padding-top: 40px; }
+.paddingTB5RL10 { padding: 5px 10px; }
+.paddingTB5RL15 { padding: 5px 15px; }
+.paddingTB5RL20 { padding: 5px 20px; }
+.paddingTB10RL20 { padding: 10px 20px; }
+.paddingTB10RL25 { padding: 10px 25px; }
+.paddingTB15RL25 { padding: 15px 25px; }
+.paddingTB20RL30 { padding: 20px 30px; }
+.paddingTB30RL40 { padding: 30px 40px; }
+.paddingTB5R0L10 { padding: 5px 0 5px 10px; }
+
+.width100 { width: 100px; }
+.width120 { width: 120px; }
+.width150 { width: 150px; }
+.width200 { width: 200px; }
+.width250 { width: 250px; }
+.width300 { width: 300px; }
+.width320 { width: 320px; }
+.width350 { width: 350px; }
+.width400 { width: 400px; }
+.width450 { width: 450px; }
+.width500 { width: 500px; }
+.width550 { width: 550px; }
+.width600 { width: 600px; }
+.width650 { width: 650px; }
+.width700 { width: 700px; }
+.width800 { width: 800px; }
+.width850 { width: 850px; }
+
+.height10 { height: 10px; }
+.height30 { height: 30px; }
+
+.textleft { text-align: left; }
+.textcenter { text-align: center; }
+.textright { text-align: right; }
+
+.button { padding: 4px; text-align: center; }
+a .button:hover { border-color: #fd620b; background-color: #ffffd5; }
+/* <div class="width300 margin0auto"><a href=""><div class="button border-blue rounded"><b></b></div></a></div> */
+
+.button2 { padding: 5px; text-align: center; }
+a .button2:hover { border-color: #fd620b; background-color: #ffffd5; }
+
+.button-left { padding: 4px 8px; }
+a .button-left:hover { border-color: #fd620b; }
+
+.button-white { padding: 4px; color: #fff; text-align: center; }
+a .button-white { color: #fff; }
+a .button-white:hover { color: #fd620b; }
+
+.button-yellow { padding: 4px; color: #ff0; text-align: center; }
+a .button-yellow { color: #ff0; }
+a .button-yellow:hover { color: #fd620b; }
+
+.button-dwl-box { width: 160px; margin: 0 auto; }
+.button-dwl { padding: 5px; text-align: center; border: 1px solid #09f;
+     -khtml-box-shadow: 0 2px 1px #c9c9c9;
+ 	    -ms-box-shadow: 0 2px 1px #c9c9c9;
+ 	     -o-box-shadow: 0 2px 1px #c9c9c9;
+	   -moz-box-shadow: 0 2px 1px #c9c9c9;
+    -webkit-box-shadow: 0 2px 1px #c9c9c9;
+	        box-shadow: 0 2px 1px #c9c9c9;
+}
+a .button-dwl:hover { border-color: #fd620b; background-color: #ffffd5; }
+/* <div class="button-dwl-box"><a href=""><div class="button-dwl rounded"><b>Download</b> (dwg+pdf)</div></a></div> */
+
+.black { color: #000; }
+.white { color: #fff; }
+.blue { color: #054bb2; }
+.lightblue { color: #09f; }
+.red { color: #f00; }
+.orange { color: #fd620b; }
+.lightorange { color: #f90; }
+.yellow { color: #ffff00; }
+.green { color: #039a66; }
+.green2 { color: #62f905; }
+.gray { color: #8f8f92; }
+.gray2 { color: #b4b4b7; }
+.darkgray { color: #2f2f2f; }
+.magenta { color: #ff0066; }
+.brown { color: #842; }
+
+.border-black { border: 1px solid #000; }
+.border-blue { border: 1px solid #054bb2; }
+.border-blue2 { border: 1px solid #155bc2; }
+.border-lightblue { border: 1px solid #09f; }
+.border-red { border: 1px solid #f00; }
+.border-orange { border: 1px solid #fd620b; }
+.border-lightorange { border: 1px solid #f90; }
+.border-green { border: 1px solid #039a66; }
+.border-green2 { border: 1px solid #62f905; }
+.border-gray { border: 1px solid #8f8f92; }
+.border-gray2 { border: 1px solid #b4b4b7; }
+.border-magenta { border: 1px solid #ff0066; }
+.border-brown { border: 1px solid #842; }
+
+a .border-blue:hover { border-color: #fd620b; }
+.border-blue-static { border: 1px solid #054bb2; }
+.border-black-static { border: 1px solid #000000; }
+.border-gray-static { border: 1px solid #c2c2c5; }
+
+.border-green-2px { border: 2px solid #62f905; }
+.border-blue2-2px { border: 2px solid #155bc2; }
+
+.bg-black { background-color: #000; }
+.bg-white { background-color: #fff; }
+.bg-blue { background-color: #26c; }
+.bg-lightblue { background-color: #f0f5ff; }
+.bg-lightblue2 { background-color: #f5fdff; }
+.bg-red { background-color: #fdd; }
+.bg-orange { background-color: #fd620b; }
+.bg-violet { background-color: #ccccff; }
+.bg-beige { background-color: #ffffd0; }
+.bg-beige2 { background-color: #ffffd5; }
+.bg-yellow { background-color: #ffcc33; }
+.bg-lightyellow { background-color: #ffff99; }
+.bg-green { background-color: #eaffe3; }
+.bg-green2 { background-color: #c0ff99; }
+.bg-gray { background-color: #e6e6e9; }
+.bg-gray2 { background-color: #f2f2f5; }
+.bg-gray3 { background-color: #f5f5f8; }
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.apice { font-size: 11px; line-height: 12px; vertical-align: super; }
+.evidenza { font-weight: bold; font-style: italic; background-color: #ff9; }
+.note { font-size: 13px; color: #039a66; }
+.sfondogiallo {
+	padding: 4px 20px;
+	color: #003399;
+	background-color: #ccff99;
+	letter-spacing: 0.5px;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #339900;
+	text-decoration: none;
+}
+.tabcenter  { font-size: 12px; text-align: center; }
+.tabhead  { font-size: 12px; font-weight: bold; background-color: #e3e3e3; text-align: center; }
+.tableft  { font-size: 12px; text-align: left; }
+.tabright { font-size: 12px; text-align: right; }
